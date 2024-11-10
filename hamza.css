@@ -1,0 +1,205 @@
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('Fontspring-DEMO-articulatcf-extralight-BF64a38d8b0e73d.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@keyframes slideIn {
+    to {
+        transform: translateX(0);  /* Slide in to the normal position */
+        opacity: 1;                /* Fade in */
+    }
+}
+@keyframes slideUp {
+    to {
+        transform: translateY(0);  /* Slide up to the normal position */
+        opacity: 1;                /* Fade in */
+    }
+}
+
+@font-face {
+    font-family: 'MyCustomFont2';
+    src: url('fonnts.com-Articulat_CF_Extra_Bold.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+z-index: 100;
+}
+
+body{
+
+font-family:Arial, sans-serif ;
+background-color: #f4f4f4;
+color: #333;
+}
+
+
+nav{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-left: 40px;
+    background-color: white;
+    height: 100px;
+}
+nav ul li a:hover{
+    color: #007bff;
+}
+.abb:hover{
+    color: #333 !important;
+}
+.logo  {
+display: flex;
+align-items: center;
+font-weight: bold;
+font-size: 1.5em;
+font-family: 'MyCustomFont2' !important;
+
+}
+.logo span span{
+    font-weight: 0.5
+;
+font-size: 0.7em;
+font-family: 'MyCustomFont';
+margin-left: 0px;
+
+}
+.logo span{
+    margin-left: 35px;
+}
+.abb{
+    color: #007bff !important;
+    font-family: 'MyCustomFont';
+}
+
+.logo-border{
+
+    width: 10px;
+    height: 10px;
+    background-color: blue;
+    display: inline-block;
+    margin-right: 8px;
+}
+.nav-links{
+    margin-right: 45px !important;
+    list-style: none;
+    display: flex;
+    gap: 35px;
+}
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-family: 'MyCustomFont';
+
+}
+main{
+    display: flex;
+    padding: 50px;
+}
+.profile{
+    flex: 0.9;
+    text-align: center;
+    background-color: #f3ece7;
+    padding: 30px;
+    height: 450px;
+    margin-top: 100px;
+    margin-left:150px ;
+    transform: translateY(100%); /* Start off-screen below */
+    animation: slideUp 2s forwards; /* Apply the animation */
+}
+.profile-photo{
+    width: 150px;
+    height: 200px;
+    border-radius: 4%;
+    margin-bottom: 20px;
+}
+.like{
+    width: 30px;
+    height: 30px;
+    
+}
+.job{
+    font-size: 1em;
+color: #777;
+margin-top: 8px;
+}
+.intro{
+    margin-top: 100px;
+
+    flex: 2;
+    padding: 0 40px;
+    transform: translateY(100%); /* Start off-screen below */
+    animation: slideUp 2.5s forwards; /* Apply the animation */
+}
+.intro h2{
+    font-size: 3em;
+    font-weight: bold;
+    font-family: 'MyCustomFont2';
+
+}
+.intro p{
+font-size: 1.2em;
+margin-top: 10px;
+
+
+}
+.buttons {
+    margin: 20px 0;
+}
+
+.btn {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.resume {
+    background-color: #007bff;
+}
+
+.projects {
+    background-color: #333;
+}
+
+
+.description {
+    color: #555;
+    font-size: 1em;
+    line-height: 1.6;
+}
+.job {
+    font-family: 'MyCustomFont';
+
+  
+}
+.cover
+{
+    background-color: #e4dacf;
+    width: 500px;
+    height: 800px;
+    position: absolute; 
+    z-index: 1;
+    transform: translateX(-100%); /* Start off-screen to the left */
+    animation: slideIn 2s forwards;
+}.cover1
+{
+    background-color: #ffffff;
+    width: 386px;
+    height: 50px;
+    position: absolute; 
+    z-index: 5005050;
+    margin-top: 600px;
+    margin-left: 200px;
+    transform: translateX(-100%); /* Start off-screen to the left */
+    animation: slideIn 2.5s forwards;
+}
